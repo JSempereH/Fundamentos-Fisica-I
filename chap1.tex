@@ -117,10 +117,53 @@ Ambos habrán recorrido $x_{fc} = x_{0c} + v_{0c}t_f = 0 + 125km/h \cdot 34.712s
 
     (a) ¿Qué tipo de movimiento realiza la pelota con respecto al observador que va en la plataforma y con respecto al observador que está en la tierra? Halle el tiempo que está en el aire la pelota con respecto a estos dos observadores. ¿Cuál es el módulo de la velocidad inicial según el observador que está en tierra?
 
-    (b) ¿Qué distancia horizontal ha recorrido la pelota durante el tiempo que etá en el aire con respecto a los dos observadores?
+    (b) ¿Qué distancia horizontal ha recorrido la pelota durante el tiempo que está en el aire con respecto a los dos observadores?
 
-    (c) ¿Cuál es la velocidad mínima (en módulo) de la pelota durante su vuelo con respecto a los dos observadores? ¿Cuál es la aeleración y la altura máxima de la pelota según los dos observadores?
+    (c) ¿Cuál es la velocidad mínima (en módulo) de la pelota durante su vuelo con respecto a los dos observadores? ¿Cuál es la aceleración y la altura máxima de la pelota según los dos observadores?
 
     [Examen Febrero 2015]
 \end{ex}
 
+\begin{solucion}
+    (a) Para el observador en la plataforma será un MRUA vertical, mientras que el observador en la tierra será un MRU horizontal y MRUA vertical, es decir, un movimiento parabólico.
+
+    \textbf{Plataforma:} El movimiento vertical se rige por:
+
+    \begin{equation*}
+        y(t) = y_0 + v_{0y}t - \frac{1}{2}g t^2
+    \end{equation*}
+    Como $y_0 = 0$ y $v_{0y} = 15m/s$, la pelota volverá a caer en el suelo en:
+
+    \begin{equation*}
+        0 = 0 + 15t - 4.9t^2 \Leftrightarrow t \approx 3.0612s
+    \end{equation*}
+
+    \textbf{Tierra:} El tiempo que tarda en volver a tocar el suelo es el mismo para el observador en la tierra.
+
+    La velocidad inicial según el observador en la tierra tiene dos componentes: una horizontal $v_{0x} = 10m/s$ y una vertical $v_{0y} = 15 m/s$. Por tanto su módulo es:
+
+    \begin{equation*}
+        \| v \| = \sqrt{v_{0x}^2 + v_{0y}^2} = \sqrt{10^2 + 15^2} = 18.0277m/s
+    \end{equation*}
+
+    (b) Para el observador en la plataforma no ha recorrido distancia horizontal, ya que solo ha jugado papel la compomente horizontal. Para el observador en la tierra, la distancia horizontal recorrida es:
+
+    \begin{equation*}
+        x(t) = x_0 + v_{0x}t = 0 + 10t \Leftrightarrow x(t) = 10t \underset{t=3.0612}{=} 30.612m
+    \end{equation*}
+
+    (c) El módulo de la velocidad para el observador en la paltaforma es solo la componente vertical $\|v_y\| = \|v_{0y} -gt\|$. Por tanto, su velocidad mínima (en módulo) es cuando llega al punto máximo del lanzamiento vertical, donde la velocidad es 0.
+    Para el observador en la tierra, el módulo de la velocidad es:
+
+    \begin{equation*}
+        \|v\| = \sqrt{v_y^2 + v_x^2}
+    \end{equation*}
+
+    Donde $v_x^2$ es constante, y $v_y^2$ varía, siendo su valor mínimo cuando alcanza el punto de altura máxima, donde $v_y=0 m/s$ y $\|v\| = v_{x} = 10m/s$.
+
+    La aceleración en ambos es la gravedad $-g = -9.8m/s^2$, que es constante. Y la altura máxima es común a ambos observadores, se alcanza en $t = \frac{v_y - v_{0y}}{-g} = \frac{0 - 15}{-9.8} \approx 1.5306s$, y la altura máxima es
+
+    \begin{equation*}
+        y_{max} = 0 + 15m/s \cdot 1.5306s -\frac{1}{2}9.8m/s^2 \cdot (1.5306)^2 = 11.4796m 
+    \end{equation*}
+\end{solucion}
